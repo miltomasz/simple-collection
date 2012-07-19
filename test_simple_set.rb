@@ -154,4 +154,8 @@ class TestSmartCollectionsSet < Test::Unit::TestCase
 
 		assert_equal(["b", "d"], @smart_set.to_a)
 	end
+
+	def teardown
+		@smart_set = nil
+	end
 end
