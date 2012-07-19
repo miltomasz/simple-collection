@@ -157,5 +157,6 @@ class TestSmartCollectionsSet < Test::Unit::TestCase
 
 	def teardown
 		@smart_set = nil
+		
 	end
 end
