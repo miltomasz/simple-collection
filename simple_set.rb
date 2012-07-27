@@ -61,6 +61,7 @@ module SmartCollection
 			@collection.keys
 		end
 
+
 		def remove_all elements
 			elements.each do |e|
 				@collection.delete e
