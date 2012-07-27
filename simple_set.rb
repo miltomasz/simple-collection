@@ -2,7 +2,6 @@ module SmartCollection
 	class Set
 		include  Enumerable
 
-
 		def initialize
 			@collection = {}
 		end
@@ -60,7 +59,6 @@ module SmartCollection
 		def to_a
 			@collection.keys
 		end
-
 
 		def remove_all elements
 			elements.each do |e|
