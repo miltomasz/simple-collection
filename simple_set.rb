@@ -28,7 +28,7 @@ module SmartCollection
 		end
 
 		def add_all array = Array.new
-			hash = Hash.new
+		  hash = Hash.new
 			array.each {|e| hash[e] = true }
 			@collection.update(hash)
 		end
