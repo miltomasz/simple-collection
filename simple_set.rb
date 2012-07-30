@@ -31,7 +31,7 @@ module SmartCollection
       hash = Hash.new
       array.each {|e| hash[e] = true }
       @collection.update(hash)
-	end
+    end
 
     def clear
       @collection.clear

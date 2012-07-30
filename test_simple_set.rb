@@ -2,23 +2,20 @@ require "smart_set"
 require "test/unit"
 
 class TestSmartCollectionsSet < Test::Unit::TestCase
-		def setup
-				@smart_set = SmartCollection::Set.new
-		end
+	def setup
+    @smart_set = SmartCollection::Set.new
+  end
 
-		def teardown
-		end
+	def test_initialize_set
+		assert_not_nil @smart_set
+	end
 
-		def test_initialize_set
-				assert_not_nil @smart_set
-		end
+  def test_add_element_to_set
+	  element = 10
 
-		def test_add_element_to_set
-				element = 10
-
-				@smart_set.add(element)
-				assert_equal(1, @smart_set.size)
-		end
+	  @smart_set.add(element)
+		assert_equal(1, @smart_set.size)
+  end
 
 		def test_remove_element_from_set
 				element = 10
@@ -157,6 +154,5 @@ class TestSmartCollectionsSet < Test::Unit::TestCase
 
 		def teardown
 				@smart_set = nil
-				
 		end
 end
