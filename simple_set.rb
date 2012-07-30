@@ -1,8 +1,7 @@
 module SmartCollection
   class Set
     include Enumerable
-
-    def initialize
+	def initialize
       @collection = {}
     end
 
