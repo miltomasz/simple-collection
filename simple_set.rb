@@ -2,13 +2,13 @@ module SmartCollection
   class Set
     include Enumerable
 
-	def initialize
-	  @collection = {}
-	end
+    def initialize
+      @collection = {}
+    end
 
-	def add element
-	  @collection[element] = true if @collection[element].nil?
-	end
+    def add element
+      @collection[element] = true if @collection[element].nil?
+    end
 
 	def size
 	  @collection.size
