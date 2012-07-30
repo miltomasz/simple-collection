@@ -1,6 +1,7 @@
 module SmartCollection
   class Set
     include Enumerable
+	
 	def initialize
       @collection = {}
     end
@@ -9,13 +10,13 @@ module SmartCollection
       @collection[element] = true if @collection[element].nil?
     end
 
-	def size
-	  @collection.size
-	end
+    def size
+      @collection.size
+    end
 
 	def remove element
-	  @collection.delete element
-	end
+      @collection.delete element
+    end
 
 	def each &block
 	  @collection.each do |k,v| 
