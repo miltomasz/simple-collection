@@ -60,10 +60,10 @@ module SmartCollection
 	  @collection.keys
 	end
 
-	def remove_all elements
-	  elements.each do |e|
+    def remove_all elements
+      elements.each do |e|
 	    @collection.delete e
-	  end
-	end
+      end
+    end
   end
 end
