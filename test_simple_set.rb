@@ -11,10 +11,10 @@ class TestSmartCollectionsSet < Test::Unit::TestCase
   end
 
   def test_add_element_to_set
-	  element = 10
+    element = 10
 
-	  @smart_set.add(element)
-		assert_equal(1, @smart_set.size)
+    @smart_set.add(element)
+    assert_equal(1, @smart_set.size)
   end
 
   def test_remove_element_from_set
