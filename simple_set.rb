@@ -3,25 +3,25 @@ module SmartCollection
 	include  Enumerable
 
 	def initialize
-		@collection = {}
+	  @collection = {}
 	end
 
 	def add element
-		@collection[element] = true if @collection[element].nil?
+	  @collection[element] = true if @collection[element].nil?
 	end
 
 	def size
-		@collection.size
+	  @collection.size
 	end
 
 	def remove element
-		@collection.delete element
+	  @collection.delete element
 	end
 
 	def each &block
 	  @collection.each do |k,v| 
 		unless v.nil?
-			block.call(k,v)
+		  block.call(k,v)
 		end 
 	  end
 	  @collection.keys
@@ -49,21 +49,21 @@ module SmartCollection
 	end
 
 	def == other_set
-		@collection.keys == other_set.to_a
+	  @collection.keys == other_set.to_a
 	end
 
 	def empty?
-		@collection.keys.empty?
+	  @collection.keys.empty?
 	end
 
 	def to_a
-		@collection.keys
+	  @collection.keys
 	end
 
 	def remove_all elements
-		elements.each do |e|
-			@collection.delete e
-		end
+	  elements.each do |e|
+	    @collection.delete e
+	  end
 	end
   end
 end
